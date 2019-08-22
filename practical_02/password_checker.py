@@ -39,24 +39,20 @@ def is_valid_password(password):
     count_digit = 0
     count_special = 0
     for char in password:
-        check_lower = char.islower()
-        check_upper = char.isupper()
-        check_digit = char.isdigit()
-        check_special = char.ispecial()
-        if check_lower is True:
+        if char.islower() is True:
             count_lower += 1
-        if check_upper is True:
-            count_upper+= 1
-        if check_digit is True:
+        if char.isupper() is True:
+            count_upper += 1
+        if char.isdigit() is True:
             count_digit += 1
-        if check_special is True:
+        if char.ispecial() is True:
             count_special += 1
         pass
 
     if count_lower == 0 or count_upper == 0 or count_digit == 0:
         return False
 
-    if SPECIAL_CHARS_REQUIRED == True and count_special ==0:
+    if SPECIAL_CHARS_REQUIRED is True and count_special == 0:
         return False
     # and return False if it's zero
 

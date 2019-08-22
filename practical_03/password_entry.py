@@ -1,6 +1,6 @@
 def main():
-    MIN_LENGTH = 5
-    password = get_password(MIN_LENGTH)
+    min_length = 5
+    password = get_password(min_length)
 
     password_to_asterisks(password)
 
@@ -10,9 +10,9 @@ def password_to_asterisks(password):
         print('*', end=' ')
 
 
-def get_password(MIN_LENGTH):
+def get_password(min_length):
     password = input("Please enter a password: ")
-    while len(password) < MIN_LENGTH:
+    while len(password) < min_length:
         print("Password is not valid")
         password = input("Please enter a password: ")
     return password
