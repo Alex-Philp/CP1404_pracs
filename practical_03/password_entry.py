@@ -6,7 +6,8 @@ def main():
 
 
 def password_to_asterisks(password):
-    for i in range(0, len(password)):
+    # for char in password:
+    for i in range(len(password)):
         print('*', end=' ')
 
 
