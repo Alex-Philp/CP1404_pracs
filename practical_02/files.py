@@ -21,8 +21,17 @@ name_from_file = readable_name.read()
 print("Your name is {}".format(name_from_file))
 readable_name.close()
 
-number_file = open("number.txt", 'r')
-number_1 = int(number_file.readline())
-number_2 = int(number_file.readline())
+two_number_file = open("number.txt", 'r')
+number_1 = int(two_number_file.readline())
+number_2 = int(two_number_file.readline())
 result = number_1 + number_2
 print(result)
+two_number_file.close()
+
+multiple_number_file = open("many_numbers.txt", 'r')
+number_from_file = int(multiple_number_file.readline())
+
+while number_from_file != '':
+    number_from_file += int(multiple_number_file.readline())
+
+print(number_from_file)
