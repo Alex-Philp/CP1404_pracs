@@ -12,49 +12,53 @@ F - Convert Fahrenheit to Celsius
 
 Q - Quit"""
 
-print(MENU)
 
-choice = input(">>> ").upper()
-
-
-def celsius_to_fahren():
-    global fahrenheit
+def celsius_to_fahren(celsius):
     fahrenheit = celsius * 9.0 / 5 + 32
+    return fahrenheit
 
 
-def fahren_to_celsius():
-    global celsius
+def fahren_to_celsius(fahrenheit):
     celsius = (fahrenheit - 32) * 5 / 9.0
+    return celsius
 
 
-while choice != "Q":
+def main():
+    print(MENU)
 
-    if choice == "C":
+    choice = input(">>> ").upper()
 
-        celsius = float(input("Celsius: "))
+    while choice != "Q":
 
-        celsius_to_fahren()
+        if choice == "C":
 
-        print("Result: {:.2f} F".format(fahrenheit))
+            celsius = float(input("Celsius: "))
 
-    elif choice == "F":
+            fahrenheit = celsius_to_fahren(celsius)
 
-        farenheit = float(input("Fahrenheit: "))
+            print("Result: {:.2f} F".format(fahrenheit))
 
-        fahren_to_celsius()
+        elif choice == "F":
 
-        print("Result: {:.2F} C".format(celsius))
+            fahrenheit = float(input("Fahrenheit: "))
+
+            celsius = fahren_to_celsius(fahrenheit)
+
+            print("Result: {:.2F} C".format(celsius))
 
         # Hint: celsius = 5 / 9 * (fahrenheit - 32)
 
         # Remove the "pass" statement when you are done. It's a placeholder.
 
-    else:
+        else:
 
-        print("Invalid option")
+            print("Invalid option")
 
-    print(MENU)
+        print(MENU)
 
-    choice = input(">>> ").upper()
+        choice = input(">>> ").upper()
 
-print("Thank you.")
+    print("Thank you.")
+
+
+main()
