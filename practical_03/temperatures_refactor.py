@@ -13,12 +13,12 @@ F - Convert Fahrenheit to Celsius
 Q - Quit"""
 
 
-def celsius_to_fahren(celsius):
+def celsius_to_fahrenheit(celsius):
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
 
-def fahren_to_celsius(fahrenheit):
+def fahrenheit_to_celsius(fahrenheit):
     celsius = (fahrenheit - 32) * 5 / 9.0
     return celsius
 
@@ -34,7 +34,7 @@ def main():
 
             celsius = float(input("Celsius: "))
 
-            fahrenheit = celsius_to_fahren(celsius)
+            fahrenheit = celsius_to_fahrenheit(celsius)
 
             print("Result: {:.2f} F".format(fahrenheit))
 
@@ -42,7 +42,7 @@ def main():
 
             fahrenheit = float(input("Fahrenheit: "))
 
-            celsius = fahren_to_celsius(fahrenheit)
+            celsius = fahrenheit_to_celsius(fahrenheit)
 
             print("Result: {:.2F} C".format(celsius))
 
