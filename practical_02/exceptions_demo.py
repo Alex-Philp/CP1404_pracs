@@ -2,7 +2,10 @@
 CP1404/CP5632 - Practical
 Answer the following questions:
 1. When will a ValueError occur?
+when input value is not of the correct data type during a mathematical operation
+making said operation impossible
 2. When will a ZeroDivisionError occur?
+when attempting to divide by zero, as it is an indefinite number
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
 """
 
