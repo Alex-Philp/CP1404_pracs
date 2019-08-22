@@ -29,9 +29,11 @@ print(result)
 two_number_file.close()
 
 multiple_number_file = open("many_numbers.txt", 'r')
-number_from_file = int(multiple_number_file.readline())
+numbers_from_file = multiple_number_file.readlines()
+total = 0
+for number in numbers_from_file:
+    total += int(number)
 
-while number_from_file != '':
-    number_from_file += int(multiple_number_file.readline())
 
-print(number_from_file)
+print(total)
+multiple_number_file.close()
