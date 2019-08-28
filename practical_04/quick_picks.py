@@ -16,4 +16,5 @@ def generate_quick_pick():
         quick_pick = quick_pick + rand_number
     return quick_pick
 
+
 main()
