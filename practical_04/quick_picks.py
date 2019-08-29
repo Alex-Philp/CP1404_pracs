@@ -10,7 +10,7 @@ def generate_quick_pick():
     numbers = [n for n in range(1, 46)]
     quick_pick = []
     for i in range(0, 6):
-        rand_index = random.randint(0, len(numbers))
+        rand_index = random.randint(0, (len(numbers)-1))
         rand_number = [numbers[rand_index]]
         numbers.remove(int(rand_number[0]))
         quick_pick = quick_pick + rand_number
