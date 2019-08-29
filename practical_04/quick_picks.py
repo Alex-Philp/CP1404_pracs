@@ -14,6 +14,8 @@ def generate_quick_pick():
         rand_number = [numbers[rand_index]]
         numbers.remove(int(rand_number[0]))
         quick_pick = quick_pick + rand_number
+
+    quick_pick.sort()
     return quick_pick
 
 
