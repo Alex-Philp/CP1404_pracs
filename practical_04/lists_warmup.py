@@ -19,5 +19,4 @@ numbers[-1] = 1
 print(numbers)
 new_numbers = numbers[2:]
 print(new_numbers)
-answer = 9 in numbers
-print(answer)
+print(9 in numbers)
