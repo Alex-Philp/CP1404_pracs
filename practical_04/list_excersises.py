@@ -1,8 +1,10 @@
 numbers = []
 total = 0
-for i in range(1, 6):
-    number = [int(input("Number: "))]
+number = int(input("Number 1: "))
+while number > 0:
     numbers.append(number)
+    number = int(input("Number {}: ".format(len(numbers)+1)))
+
 
 print("The first number is {}".format(numbers[0]))
 print("The last number is {}".format(numbers[-1]))
