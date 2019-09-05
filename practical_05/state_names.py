@@ -18,4 +18,4 @@ while state != "":
     state = (input("Enter short state: ")).upper()
 
 for short_state, state in STATE_NAMES.items():
-    print("{:3} is {}".format(short_state,state))
+    print("{:3} is {}".format(short_state, state))

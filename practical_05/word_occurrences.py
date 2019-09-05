@@ -13,7 +13,7 @@ for word in words:
         longest_word = word
 
 for word, count in word_to_count.items():
-    strings.append(("{:{}} : {}".format(word, len(longest_word),word_to_count[word])))
+    strings.append(("{:{}} : {}".format(word, len(longest_word), word_to_count[word])))
 strings.sort()
 print("Text: {}".format(text))
 for string in strings:
