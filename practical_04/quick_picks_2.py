@@ -2,7 +2,9 @@ def main():
     number_of_quick_picks = int(input("How many quick picks? "))
     for i in range(0, number_of_quick_picks):
         quick_pick = generate_quick_pick()
-        print(quick_pick)
+        print(
+            "{:2} {:2} {:2} {:2} {:2}".format(quick_pick[0], quick_pick[1], quick_pick[2], quick_pick[3],
+                                              quick_pick[4]))
 
 
 def generate_quick_pick():
