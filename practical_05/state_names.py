@@ -15,7 +15,7 @@ while state != "":
         print(state, "is", STATE_NAMES[state])
     else:
         print("Invalid short state")
-    state = input("Enter short state: ")
+    state = (input("Enter short state: ")).upper()
 
 for short_state, state in STATE_NAMES.items():
     print("{:3} is {}".format(short_state, state))
