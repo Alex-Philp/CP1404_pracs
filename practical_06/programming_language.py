@@ -1,6 +1,6 @@
 class ProgrammingLanguage:
 
-    def __init__(self, name="", typing="", reflection="", year=int):
+    def __init__(self, name="", typing="", reflection=False, year=int):
         self.name = name
         self.typing = typing
         self.reflection = reflection
