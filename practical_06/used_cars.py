@@ -6,7 +6,7 @@ from practical_06.car import Car
 
 def main():
     """Demo test code to show how to use car class."""
-    my_car = Car("my_car",180)
+    my_car = Car("my_car", 180)
     limo = Car("limo", 100)
     limo.add_fuel(20)
     print("The {} has {} fuel".format(limo.name, limo.fuel))

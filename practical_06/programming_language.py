@@ -13,4 +13,5 @@ class ProgrammingLanguage:
             return 0
 
     def __str__(self):
-        return "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection, self.year)
+        return "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection,
+                                                                           self.year)
